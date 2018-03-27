@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_details"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.callback.Activity.Activity.ContactAddActivity">
+
+    <include layout="@layout/toolbar_add"></include>
+
+    <ImageView
+        android:id="@+id/add_photo"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:src="@mipmap/ic_photo"
+        android:background="@color/blueBack"/>
+
+    <LinearLayout
+        android:id="@+id/ll_name"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:layout_weight="0.04"
+            android:src="@drawable/ic_person_new" />
+
+        <EditText
+            android:id="@+id/c_name"
+            android:layout_width="0dp"
+            android:inputType="text"
+            android:layout_height="wrap_content"
+            android:hint="NAME"
+            android:layout_weight="0.3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_php"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_ph"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_phone"
+            android:padding="5dp"
+            android:layout_weight="0.05" />
+
+        <TextView
+            android:id="@+id/tv_per"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Personal"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_weight="0.02"/>
+
+        <EditText
+            android:id="@+id/et_pph"
+            android:layout_width="0dp"
+            android:inputType="phone"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.31"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_off"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/tv_ph_off"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_weight="0.12"
+            android:gravity="right"
+            android:text="Office"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/et_off"
+            android:layout_width="0dp"
+            android:inputType="phone"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_ph_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_weight="0.12"
+            android:gravity="right"
+            android:text="Home"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/et_home"
+            android:layout_width="0dp"
+            android:inputType="phone"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_email"
+            android:padding="5dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_email"
+            android:layout_weight="0.05"/>
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="E-Mail"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_weight="0.02"/>
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="0dp"
+            android:inputType="textEmailAddress"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_addr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/iv_addr"
+            android:padding="5dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_location"
+            android:layout_weight="0.05"/>
+
+        <TextView
+            android:id="@+id/tv_addr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:layout_weight="0.02"/>
+
+        <EditText
+            android:id="@+id/et_addr"
+            android:maxLines="1"
+            android:inputType="text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_gender"
+        >
+
+        <ImageView
+            android:id="@+id/iv_gender"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_wc"
+            android:padding="5dp"
+            android:elevation="0.05dp" />
+
+        <TextView
+            android:id="@+id/tv_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:padding="5dp" />
+
+        <RadioGroup
+            android:id="@+id/radio_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/radio_m"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:layout_weight="1"/>
+            <RadioButton
+                android:id="@+id/radio_fm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:layout_weight="1"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</LinearLayout>
